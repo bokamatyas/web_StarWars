@@ -1,8 +1,0 @@
-<ifModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /12aBM/%c2%a0/projektmunka
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /12aBM/%c2%a0/projektmunka/index.html [L]
-</ifModule>
