@@ -1,7 +1,7 @@
 import ROTJ from "./rotj.js";
 
 // default url
-const BASE_URL = '/12aBM/%c2%a0/projektmunka';
+const BASE_URL = '/12a/Projektmunka/web_StarWars';
 // oldalak helye:
 const rootDiv = document.querySelector('#root');
 // nav-ok:
@@ -10,8 +10,7 @@ const navs = document.querySelectorAll('a[data-href]');
 
 //route-ok
 const routes = {
-    '/'         : {html : './pages/home.html', code : ROTJ},
-       
+    '/'         : {html : './pages/home.html', code : ROTJ},   
     '/404' : {html : './pages/404.html', code : null}
 }
 
@@ -20,6 +19,7 @@ const loadPage = async (page)=>{
     const response = await fetch(page.html);
     const resHTML = response.text(); // szöveggé konvertálás
     return resHTML;
+    console.log(response);
 }
 
 // dinamikus osztály példányosítás

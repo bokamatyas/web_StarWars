@@ -1,6 +1,6 @@
 .page-bg{
-    background: linear-gradient(0.25turn, #406fe7, #000000, #EB212E);
-    height: 800px;
+    background: linear-gradient(0.25turn, #406fe7, #000000, #EB212E); 
+    min-height: 500;
 }
 
 .header{
@@ -29,4 +29,10 @@
     font-family: 'Star Wars', sans-serif;
     text-shadow: #000000 1px 0 10px;
     color: #ffeded;
+}
+
+.background{
+    background: url(../img/star_wallpaper.png);
+    background-repeat: no-repeat;
+    width: 100%;
 }

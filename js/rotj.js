@@ -58,20 +58,20 @@ export default class ROTJ {
             carouselInner.innerHTML += 
             `            
             <div class="carousel-item ${characters[i].id == 1 ? "active" : ""}">
-                <div class="bg-dark">
+                <div>
                     <div class="row">
                         <div class="col-12 col-sm-4">
-                            <img class="d-block w-100 h-100 rounded-circle" src="https://bgs.jedlik.eu/swimages/characters/${characters[i].url}.jpg" alt="First slide">
+                            <img class="d-block w-100 h-50 rounded-circle" src="https://bgs.jedlik.eu/swimages/characters/${characters[i].url}.jpg" alt="First slide">
                             <h1>Név</h1>
                             <p>sajt</p>
                         </div>
                         <div class="col-12 col-sm-4">
-                            <img class="d-block w-100 h-100 rounded-circle" src="https://bgs.jedlik.eu/swimages/characters/${characters[i+1].url}.jpg" alt="First slide">
+                            <img class="d-block w-100 h-50 rounded-circle" src="https://bgs.jedlik.eu/swimages/characters/${characters[i+1].url}.jpg" alt="First slide">
                             <h1>Név</h1>
                             <p>sajt</p>
                         </div> 
                         <div class="col-12 col-sm-4">
-                            <img class="d-block w-100 h-100 rounded-circle" src="https://bgs.jedlik.eu/swimages/characters/${characters[i+2].url}.jpg" alt="First slide">
+                            <img class="d-block w-100 h-50 rounded-circle" src="https://bgs.jedlik.eu/swimages/characters/${characters[i+2].url}.jpg" alt="First slide">
                             <h1>Név</h1>
                             <p>sajt</p>
                         </div>  
