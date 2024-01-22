@@ -1,35 +1,84 @@
- 
-<div class="data text-sw"></div>
+<head>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <!-- <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol> -->
-  <div class="carousel-inner" style="color: white;">
-    <!-- Adatok ide -->
-    <!-- <div class="carousel-item">
-      <div class="bg-dark">
-        <div class="col-12 col-sm-6 col-md-4">
-          <img class="d-block w-100 h-100 rounded-circle" src="https://bgs.jedlik.eu/swimages/characters/1.jpg" alt="First slide">
-          <h1>Név</h1>
-          <p>sajt</p>
-        </div>        
-    </div>             -->
-      
+<body>
 
+
+
+  <div id="hider"></div>
+
+  <div class="main-title">
+    <p style="text-indent: 20px;">STaR</p>
+    <p>WarS</p>
+    <p id="subtitle">Return of the jedi</p>
+    <h1></h1>
+  </div>
+
+  <div class="crawl-container">
+    <div class="fade"></div>
+
+    <section class="star-wars">
+      <div class="crawl">
+        <div class="title">
+
+        </div>
+        <!-- crawl     -->
+      </div>
+    </section>
+  </div>
+
+
+  <!-- CHARCATERS -->
+
+  <div class="divider">
+    <h1>Characters</h1>
+  </div>
+
+  <div>
+    <button id="BTN_C_P" class="my-3 BTN_slider">Previous</button>
+  </div>
+  <div class="row" id="Container_characters">
+    <div class="col-12">
+      <div class="row" id="characters">
+        <div class="modal">
+          <button class="BTN_slider mt-2 BTN_closeModal">Close</button>
+          <hr>
+          <table class="modal_content"></table>
+        </div>
+        <!-- data -->
+      </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+  <div>
+    <button id="BTN_C_N" class="my-3 BTN_slider">Next</button>
+  </div>
 
-<div class="page-bg"></div>   
+  <!-- VEHICLES -->
 
+  <div class="divider">
+    <h1>Vehicles</h1>
+  </div>
+
+  <div>
+    <button id="BTN_V_P" class="my-3 BTN_slider">Previous</button>
+  </div>
+  <div class="row" id="Container_vehicles">
+    <div class="col-12">
+      <div class="row" id="vehicles">
+        <div class="modal">
+          <button class="BTN_slider mt-2 BTN_closeModal">Close</button>
+          <hr>
+          <table class="modal_content"></table>
+        </div>
+        <!-- data -->
+      </div>
+    </div>
+  </div>
+  <div>
+    <button id="BTN_V_N" class="my-3 BTN_slider">Next</button>
+  </div>
+
+  <div class="page-bg"></div>
+
+</body>

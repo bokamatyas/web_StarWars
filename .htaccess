@@ -1,8 +1,8 @@
 <ifModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /12a/Projektmunka/web_StarWars
+  RewriteBase /12a/%c2%a0/web_StarWars
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /12a/Projektmunka/web_StarWars/index.html [L]
+  RewriteRule . /12a/%c2%a0/web_StarWars/index.html [L]
 </ifModule>

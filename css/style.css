@@ -11,14 +11,15 @@
 
 .header img{
     width: 100%;
-    height: 500;
-    object-fit: cover;
-    object-position: 100% -20%;
+    height: 200;
+    /* object-fit: cover; */
+    object-position: 100% -20%;    
 }
 
 .header h1{
     color: #ffae00;
     font-family: 'Star Wars', sans-serif;
+    font-size: 5vw;
     position: absolute;
     top: 85%;
     left: 50%;
@@ -33,6 +34,225 @@
 
 .background{
     background: url(../img/star_wallpaper.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     width: 100%;
+}
+
+.displayItem{       
+    background-color: #000000;
+    color: #ffeded;
+    border: 4px solid #406fe7 ;
+    border-radius: 20%;
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 300px;
+}
+
+.displayItem:hover{   
+    cursor: pointer;
+    background-color: #232121;
+}
+
+.displayItem img{
+    border: 4px solid #406fe7;
+    border-top: none;
+}
+
+.displayItem h1{
+    margin-top: 10px;
+    font-size:calc(16px + 1.8vw);
+
+}
+
+.displayWrapper{
+    min-height: 350px;
+}
+
+#Container_characters, #Container_vehicles{    
+    height: 350px;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+#characters, #vehicles{
+    position: relative;
+    top: 0px;
+    transition: 1s;
+    -webkit-transition: top 1s linear;
+}
+
+.modal{
+    position: absolute;
+    /* top: 0px; */
+    left: calc(50vw - 200px);
+    height: fit-content;
+    min-height: 300px;
+    width: 400px;
+    display: none;
+    background: linear-gradient(0.25turn, #406fe7, #000000, #EB212E); 
+    color: #ffeded;
+    z-index: 3;
+    /* border: 5px solid#EB212E; */
+    border-radius: 20%;
+}
+
+.modal li{
+    text-align: left;
+}
+.modal p, h6{
+    margin: 0;
+}
+
+.modal_content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal_content tr{
+    border-bottom: 1px solid #ffeded;
+}
+
+.modal_content th{
+    vertical-align: top;
+}
+
+hr{
+    margin: 0;
+}
+
+#hider{
+    display: none;    
+    opacity:0.6;
+    background-color:#000000;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:2;
+}
+
+.BTN_slider{
+    font-family: 'Star Wars', sans-serif;
+    color: #ffeded;
+    background-color: transparent;
+    border: none;
+}
+
+
+.BTN_slider:hover, .BTN_slider:hover{
+    cursor: pointer;
+    color: #ffeded;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20%;
+}
+
+.BTN_slider:active, .BTN_slider:active{
+    color: #EB212E;
+}
+
+.divider{
+    width: 100%;
+    background: linear-gradient(1turn, rgba(64,111,231,0.5), #000000, rgba(235,33,46,0.5));
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.divider h1{
+    font-family: 'Star Wars', sans-serif;
+    color: #ffeded;    
+}
+
+.fade {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    top: -25px;
+    background-image: linear-gradient(0deg, transparent, black 75%);
+    z-index: 1;
+  }
+  
+  .star-wars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 5vw;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 400px;
+    text-align: justify;
+  }
+  
+.crawl {
+    position: relative;
+    top: 99999px;
+    transform-origin: 50% 100%;
+    animation: crawl 50s linear;
+    animation-iteration-count: infinite;
+}
+  
+.crawl .title{
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 80px;
+}
+
+.crawl .spacer{
+    height: 1px;
+    margin-bottom: 100px;
+}
+  
+  @keyframes crawl {
+    0% {
+      top: -100px;
+      transform: rotateX(20deg)  translateZ(0);
+    }
+    100% { 
+      top: -6000px;
+      transform: rotateX(25deg) translateZ(-2500px);
+    }
+  }
+
+.crawl-container{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.footer{
+    min-height: 50px;
+    color: #ffeded;
+    background-color: #232121;
+}
+
+.main-title{
+    color: #ffae00;
+    font-family: 'Star Wars', sans-serif;
+    font-size: 100px;
+    background: linear-gradient(0.25turn, rgba(30, 31, 33, 0.5), #000000, rgba(61, 27, 29, 0.5));
+}
+
+.main-title p{
+    text-align: center;
+    margin: 0;
+    height: 90px;
+}
+
+.main-title h1{
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.main-title #subtitle{
+    font-size: calc(12px + 3vw);
+    margin-top: 30px !important;
 }
