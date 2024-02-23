@@ -1,8 +1,0 @@
--Az oldal sikeresen betöltődik, elindul a "crawl"
--Az oldalon létezik "characters" és "vehicles" tartalmi mező
--Lapozó gomb kattintásra a fókuszban lévő képek váltakoznak előre
--Lapozó gomb kattintásra a fókuszban lévő képek váltakoznak vissza
--Lapozó gomb nem lép ki a képek div-jéből
--Átméretezés hatására visszaugrik a tartalom az elsőre
--Bármelyik kártyaszerű képre kattintva megjelenik azok leíró tartalma
--CSS formázás tesztek (több)
