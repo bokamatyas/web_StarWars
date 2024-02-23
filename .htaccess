@@ -1,6 +1,6 @@
 <ifModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /12a/%c2%a0/web_StarWars
+  RewriteBase https://bokamatyas.github.io/web_StarWars
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
