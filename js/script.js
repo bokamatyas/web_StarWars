@@ -1,7 +1,7 @@
 import ROTJ from "./rotj.js";
 
 // default url
-const BASE_URL = 'https://bokamatyas.github.io/web_StarWars';
+const BASE_URL = 'bokamatyas.github.io/web_StarWars';
 // oldalak helye:
 const rootDiv = document.querySelector('#root');
 // nav-ok:
