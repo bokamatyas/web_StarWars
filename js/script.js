@@ -60,7 +60,7 @@ window.addEventListener('popstate',async ()=>{
 
 // F5 frissítés
 window.addEventListener('load', async ()=>{
-    const routePath = window.location.pathname.slice(BASE_URL.length,window.location.pathname.length);
+    const routePath = "/#home"
     let data;
     if (routePath in routes){
         data = await loadPage(routes[routePath]);
