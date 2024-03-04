@@ -37,8 +37,8 @@ const onNavClick = async (event)=>{
     // console.log(event.target.dataset.href);
     const pathName = event.target.dataset.href;
     const data = await loadPage(routes[pathName]);
-    rootDiv.innerHTML = data;
-    window.history.pushState({},'',window.location.origin + BASE_URL + pathName);
+    rootDiv.innerHTML = data;    
+    window.history.pushState({},'',window.location.origin + BASE_URL);
     //console.log(window.location);
     dynamicClass(routes[pathName]);
 }
