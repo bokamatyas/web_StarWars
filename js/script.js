@@ -70,7 +70,7 @@ window.addEventListener('load', async ()=>{
     }
     rootDiv.innerHTML = data;
 
-    dynamicClass(routes[routePath]);
+    dynamicClass(routes[routePath].code);
 })
 
 // eseménykezelés
