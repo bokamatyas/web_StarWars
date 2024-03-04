@@ -50,13 +50,15 @@ export default class ROTJ {
         console.log(movie);
 
         // document.querySelector('.crawl').innerHTML += `<p>Episode VI<br>${movie[0].title}</p>`;
-        document.querySelector('.crawl').innerHTML +=
-        `           
-            <p class="title">Episode VI</p>
-            <p class="title">${movie[0].title}</p><br>    
-            <p>${movie[0].opening_crawl.replaceAll("\r\n\r\n", `<p class="spacer"></p>`)}</p>    
-                        
-        `;          
+        if (document.querySelector('.crawl').innerHTML.length < 500) {
+            document.querySelector('.crawl').innerHTML +=
+            `           
+                <p class="title">Episode VI</p>
+                <p class="title">${movie[0].title}</p><br>    
+                <p>${movie[0].opening_crawl.replaceAll("\r\n\r\n", `<p class="spacer"></p>`)}</p>    
+                            
+            `;   
+        }        
 
         console.log(movie[0].opening_crawl);
                       
