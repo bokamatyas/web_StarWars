@@ -10,7 +10,7 @@ const navs = document.querySelectorAll('a[data-href]');
 
 //route-ok
 const routes = {
-    '/home'         : {html : './pages/home.html', code : ROTJ},   
+    '/#home'         : {html : './pages/home.html', code : ROTJ},   
     '/404' : {html : './pages/404.html', code : null}
 }
 
