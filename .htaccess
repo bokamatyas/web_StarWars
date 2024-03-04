@@ -4,5 +4,5 @@
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . bokamatyas.github.io/web_StarWars/index.html [L]
+  RewriteRule . bokamatyas.github.io/web_StarWars/#home [L]
 </ifModule>
