@@ -33,13 +33,11 @@ const dynamicClass = (page) => {
 // function onNavClick(){
 // }
 const onNavClick = async (event)=>{
-    event.preventDefault(); // megakadályozza az oldal újratöltését
-    // console.log(event.target.dataset.href);
-    const pathName = event.target.dataset.href;
+    event.preventDefault();
+    const pathName = "/#home";
     const data = await loadPage(routes[pathName]);
     rootDiv.innerHTML = data;    
     // window.history.pushState({},'',window.location.origin + BASE_URL);
-    //console.log(window.location);
     dynamicClass(routes[pathName]);
 }
 
@@ -79,3 +77,5 @@ window.addEventListener('load', async ()=>{
 navs.forEach(nav =>{
     nav.addEventListener('click',onNavClick);
 })
+
+onNavClick();
