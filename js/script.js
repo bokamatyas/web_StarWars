@@ -11,7 +11,7 @@ const navs = document.querySelectorAll('a[data-href]');
 //route-ok
 const routes = {
     '/#home'         : {html : './pages/home.html', code : ROTJ},   
-    '/404' : {html : './pages/404.html', code : null}
+    '/404' : {html : './pages/home.html', code : null}
 }
 
 // oldalak betöltése
