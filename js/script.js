@@ -24,6 +24,7 @@ const loadPage = async (page)=>{
 
 // dinamikus osztály példányosítás
 const dynamicClass = (page) => {
+    console.log(page);
     if (page.code != null){
         const dynamicClassName = eval(page.code);
         new dynamicClassName();
