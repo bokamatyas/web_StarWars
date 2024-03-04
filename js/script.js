@@ -32,8 +32,8 @@ const dynamicClass = (page) => {
 
 // function onNavClick(){
 // }
-const onNavClick = async (event)=>{
-    event.preventDefault();
+const onNavClick = async ()=>{
+    // event.preventDefault();
     const pathName = "/#home";
     const data = await loadPage(routes[pathName]);
     rootDiv.innerHTML = data;    
