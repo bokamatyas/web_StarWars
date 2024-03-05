@@ -17,6 +17,9 @@ namespace StarWarsTests.pageObjects
         [FindsBy(How = How.TagName, Using = "title")]
         public IWebElement Tag_title { get; set; }
 
+
+        [FindsBy(How = How.TagName, Using = "script")]
+        public IList<IWebElement> Tag_script { get; set; }
         [FindsBy(How = How.TagName, Using = "link")]
         public List<IWebElement> Link_list { get;}
         [FindsBy(How = How.Id, Using = "BTN_C_P")]
