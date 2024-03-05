@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj": {}
+    "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj": {}
   },
   "projects": {
-    "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj": {
+    "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
+        "projectUniqueName": "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
         "projectName": "StarWarsTests",
-        "projectPath": "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
+        "projectPath": "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
         "packagesPath": "C:\\Users\\boka.matyas\\.nuget\\packages\\",
-        "outputPath": "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\obj\\",
+        "outputPath": "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,10 +49,6 @@
               "target": "Package",
               "version": "[4.14.1, )"
             },
-            "DotNetSeleniumExtras.WaitHelpers": {
-              "target": "Package",
-              "version": "[3.11.0, )"
-            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.5.0, )"
@@ -80,6 +76,10 @@
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[122.0.6261.9400, )"
+            },
+            "SeleniumExtras.WaitHelpers": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -110,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

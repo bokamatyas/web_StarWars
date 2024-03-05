@@ -36,18 +36,6 @@
           "lib/net6.0/SeleniumExtras.PageObjects.dll": {}
         }
       },
-      "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
-        "type": "package",
-        "dependencies": {
-          "Selenium.WebDriver": "3.10.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll": {}
-        }
-      },
       "Microsoft.CodeCoverage/17.5.0": {
         "type": "package",
         "compile": {
@@ -473,6 +461,18 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.0.0-beta2"
+        },
+        "compile": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
+        }
+      },
       "SharpZipLib/1.4.2": {
         "type": "package",
         "compile": {
@@ -731,21 +731,6 @@
         "lib/net462/SeleniumExtras.PageObjects.dll",
         "lib/net6.0/SeleniumExtras.PageObjects.dll",
         "lib/netstandard2.0/SeleniumExtras.PageObjects.dll"
-      ]
-    },
-    "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
-      "sha512": "xc6jVVl5ymgk3ZNWnC/KHxkEup1QpnwYbrwF+NQoCOGERsD8YMlLwmsX4lGhLXCLo/YQTRTIwlKCN9E/doGUNg==",
-      "type": "package",
-      "path": "dotnetseleniumextras.waithelpers/3.11.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
-        "dotnetseleniumextras.waithelpers.nuspec",
-        "lib/net35/SeleniumExtras.WaitHelpers.dll",
-        "lib/net40/SeleniumExtras.WaitHelpers.dll",
-        "lib/net45/SeleniumExtras.WaitHelpers.dll",
-        "lib/netstandard2.0/SeleniumExtras.WaitHelpers.dll"
       ]
     },
     "Microsoft.CodeCoverage/17.5.0": {
@@ -1373,6 +1358,19 @@
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "sha512": "de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "type": "package",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll",
+        "seleniumextras.waithelpers.1.0.2.nupkg.sha512",
+        "seleniumextras.waithelpers.nuspec"
+      ]
+    },
     "SharpZipLib/1.4.2": {
       "sha512": "yjj+3zgz8zgXpiiC3ZdF/iyTBbz2fFvMxZFEBPUcwZjIvXOf37Ylm+K58hqMfIBt5JgU/Z2uoUS67JmTLe973A==",
       "type": "package",
@@ -1666,7 +1664,6 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "DotNetSeleniumExtras.PageObjects.Core >= 4.14.1",
-      "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
@@ -1674,6 +1671,7 @@
       "Selenium.Support >= 4.18.1",
       "Selenium.WebDriver >= 4.18.1",
       "Selenium.WebDriver.ChromeDriver >= 122.0.6261.9400",
+      "SeleniumExtras.WaitHelpers >= 1.0.2",
       "System.Configuration.ConfigurationManager >= 8.0.0",
       "WebDriverManager >= 2.17.2",
       "coverlet.collector >= 3.2.0"
@@ -1686,11 +1684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
+      "projectUniqueName": "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
       "projectName": "StarWarsTests",
-      "projectPath": "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
+      "projectPath": "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
       "packagesPath": "C:\\Users\\boka.matyas\\.nuget\\packages\\",
-      "outputPath": "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\obj\\",
+      "outputPath": "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1728,10 +1726,6 @@
             "target": "Package",
             "version": "[4.14.1, )"
           },
-          "DotNetSeleniumExtras.WaitHelpers": {
-            "target": "Package",
-            "version": "[3.11.0, )"
-          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.5.0, )"
@@ -1759,6 +1753,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[122.0.6261.9400, )"
+          },
+          "SeleniumExtras.WaitHelpers": {
+            "target": "Package",
+            "version": "[1.0.2, )"
           },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
@@ -1789,7 +1787,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

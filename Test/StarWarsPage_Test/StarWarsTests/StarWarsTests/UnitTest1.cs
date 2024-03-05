@@ -1,16 +1,16 @@
+using StarWarsTests.pageObjects;
+using StarWarsTests.utilities;
+
 namespace StarWarsTests
 {
-    public class Tests
-    {
-        [SetUp]
-        public void Setup()
-        {
-        }
+    public class Tests : Base
+    {       
 
-        [Test]
-        public void Test1()
+        [Test, Order(1)]
+        public void Test()
         {
-            Assert.Pass();
+            mainPage MAINPAGE = new mainPage(driver);
+            Assert.That(MAINPAGE.Tag_title.GetAttribute("innerHTML"), Is.EqualTo("Return of the jedi"));
         }
     }
 }

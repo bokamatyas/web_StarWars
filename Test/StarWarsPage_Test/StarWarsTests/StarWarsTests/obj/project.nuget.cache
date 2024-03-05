@@ -1,13 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LwfA3tPWwN9416IPOMP3BNlEZ34IK18K576ORrpVTlhUViiKj8P5wO/N9PF0kSV5aeY21Xj+w+ldRo6q7pQpLQ==",
+  "dgSpecHash": "JdI2ny/ZXzX1etaKGPDbR3EMmYrm9MDgRuEHyOgXRHahK45Hslo14j4H4mTcZfdhdlSofiBAhkZeUH9OTzMIjQ==",
   "success": true,
-  "projectFilePath": "D:\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
+  "projectFilePath": "D:\\web_StarWars\\Test\\StarWarsPage_Test\\StarWarsTests\\StarWarsTests\\StarWarsTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boka.matyas\\.nuget\\packages\\anglesharp\\1.1.0\\anglesharp.1.1.0.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core\\4.14.1\\dotnetseleniumextras.pageobjects.core.4.14.1.nupkg.sha512",
-    "C:\\Users\\boka.matyas\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
@@ -23,6 +22,7 @@
     "C:\\Users\\boka.matyas\\.nuget\\packages\\selenium.support\\4.18.1\\selenium.support.4.18.1.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\selenium.webdriver\\4.18.1\\selenium.webdriver.4.18.1.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\selenium.webdriver.chromedriver\\122.0.6261.9400\\selenium.webdriver.chromedriver.122.0.6261.9400.nupkg.sha512",
+    "C:\\Users\\boka.matyas\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
     "C:\\Users\\boka.matyas\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",

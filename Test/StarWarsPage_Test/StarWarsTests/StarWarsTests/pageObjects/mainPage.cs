@@ -1,10 +1,5 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StarWarsTests.pageObjects
 {
@@ -17,6 +12,7 @@ namespace StarWarsTests.pageObjects
             PageFactory.InitElements(this.driver, this);
         }
 
-
+        [FindsBy(How = How.TagName, Using = "title")]
+        public IWebElement Tag_title { get; set; }
     }
 }

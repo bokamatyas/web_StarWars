@@ -10,7 +10,7 @@ using System.Configuration;
 
 namespace StarWarsTests.utilities
 {
-    class Base
+    public class Base
     {
         public IWebDriver driver;
         [SetUp]

@@ -8,6 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StarWarsTests
-build_property.ProjectDir = D:\StarWarsPage_Test\StarWarsTests\StarWarsTests\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = D:\web_StarWars\Test\StarWarsPage_Test\StarWarsTests\StarWarsTests\
