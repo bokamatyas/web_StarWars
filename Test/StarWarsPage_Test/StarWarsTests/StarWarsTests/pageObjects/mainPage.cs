@@ -3,7 +3,7 @@ using SeleniumExtras.PageObjects;
 
 namespace StarWarsTests.pageObjects
 {
-    class mainPage
+    public class mainPage
     {
         IWebDriver driver;
         public mainPage(IWebDriver _driver)
@@ -14,5 +14,11 @@ namespace StarWarsTests.pageObjects
 
         [FindsBy(How = How.TagName, Using = "title")]
         public IWebElement Tag_title { get; set; }
+
+        [FindsBy(How = How.TagName, Using = "script")]
+
+        public IList<IWebElement> Tag_script { get; set; }
+
+        [FindsBy(How = )]
     }
 }
