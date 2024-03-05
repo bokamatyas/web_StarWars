@@ -7,12 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 using WebDriverManager.DriverConfigs.Impl;
 using System.Configuration;
+using StarWarsTests.pageObjects;
 
 namespace StarWarsTests.utilities
 {
     public class Base
-    {
+    {       
         public IWebDriver driver;
+        public mainPage MAINPAGE;
         [SetUp]
         public void StartBrowser()
         {
@@ -26,6 +28,7 @@ namespace StarWarsTests.utilities
 
             driver.Url = actUrl;
 
+            MAINPAGE = new mainPage(driver);
         }
 
         [TearDown]
