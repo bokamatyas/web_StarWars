@@ -7,7 +7,7 @@ namespace StarWarsTests
     {       
 
         [Test, Order(1)]
-        public void Test()
+        public void TestPageTitle()
         {
             mainPage MAINPAGE = new mainPage(driver);
             Assert.That(MAINPAGE.Tag_title.GetAttribute("innerHTML"), Is.EqualTo("Return of the jedi"));
