@@ -1,7 +1,9 @@
 ﻿using AngleSharp.Dom;
+using Microsoft.VisualBasic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using SeleniumExtras.PageObjects;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace StarWarsTests.pageObjects
 {
@@ -34,6 +36,8 @@ namespace StarWarsTests.pageObjects
         public IWebElement Container_characters { get; set; }
         [FindsBy(How = How.Id, Using = "vehicles")]
         public IWebElement Container_vehicles{ get; set; }
+        [FindsBy(How = How.XPath, Using = "//*")]
+        public IList<IWebElement> All_elements { get; set; }
 
         public string ClickCharSliders()
         {
@@ -58,6 +62,27 @@ namespace StarWarsTests.pageObjects
             actions.MoveToElement(Button_vehiclePrev).Click().Perform();
             Thread.Sleep(100);
             return Container_vehicles.GetAttribute("style");
+        }
+
+        public string[] ResizeWindow()
+        {
+            ClickCharSliders();
+            ClickVehicleSliders();
+            driver.Manage().Window.Minimize();
+            driver.Manage().Window.Maximize();
+            Thread.Sleep(200);
+            return new string[] { Container_characters.GetAttribute("style"), Container_vehicles.GetAttribute("style") };
+        }
+
+        public int GetAllLinearGradientClasses()
+        {
+            int count = 0;
+            foreach (var e in All_elements)
+            {
+                if (e.GetCssValue("background").Contains("linear-gradient") ||
+                e.GetCssValue("background-image").Contains("linear-gradient")) {count++; }
+            }
+            return count;
         }
     }
 }
