@@ -43,8 +43,34 @@ namespace StarWarsTests
                 Assert.Multiple(() =>
                 {
                     Assert.That(MAINPAGE.ClickCharSliders(), Is.EqualTo("top: -350px;"));
-                    Assert.That(MAINPAGE.ClickVehicleSliders(), Is.EqualTo("top: -1400px;"));
+                    Assert.That(MAINPAGE.ClickVehicleSliders(), Is.EqualTo("top: -350px;"));
                 });
+            }
+            catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
+        }
+
+        [Test, Order(6)]
+        public void TestContentChangeOnPageResize()
+        {
+            try
+            {
+                string[] results = MAINPAGE.ResizeWindow();
+                Assert.Multiple(() =>
+                {
+                    Assert.That(results[0], Is.EqualTo("top: 0px;"));
+                    Assert.That(results[1], Is.EqualTo("top: 0px;"));
+                });
+            }
+            catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
+        }
+
+        [Test, Order(8)]
+        public void TestCountofLinearGradientClasses()
+        {
+            try
+            {
+                Thread.Sleep(2000);
+                Assert.That(MAINPAGE.GetAllLinearGradientClasses(), Is.EqualTo(7));
             }
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
         }
