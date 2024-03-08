@@ -22,22 +22,46 @@ namespace StarWarsTests.pageObjects
 
         [FindsBy(How = How.TagName, Using = "script")]
         public IList<IWebElement> Tag_script { get; set; }
+
+
         [FindsBy(How = How.TagName, Using = "link")]
         public List<IWebElement> Link_list { get;}
+
+
         [FindsBy(How = How.Id, Using = "BTN_C_P")]
         public IWebElement Button_charPrev { get; set; }
+
+
         [FindsBy(How = How.Id, Using = "BTN_C_N")]
         public IWebElement Button_charNext { get; set; }
+
+
         [FindsBy(How = How.Id, Using = "BTN_V_P")]
         public IWebElement Button_vehiclePrev { get; set; }
+
+
         [FindsBy(How = How.Id, Using = "BTN_V_N")]
         public IWebElement Button_vehicleNext { get; set; }
+
+
         [FindsBy(How = How.Id, Using = "characters")]
         public IWebElement Container_characters { get; set; }
+
+
         [FindsBy(How = How.Id, Using = "vehicles")]
         public IWebElement Container_vehicles{ get; set; }
         [FindsBy(How = How.XPath, Using = "//*")]
         public IList<IWebElement> All_elements { get; set; }
+
+
+        [FindsBy(How = How.CssSelector, Using = "#characters > div:nth-child(2) > div")]
+        public IWebElement Card_Click { get; set; }
+
+
+        [FindsBy(How = How.Id, Using = "hider")]
+        public IWebElement Card_Show { get; set; }
+
+
 
         public string ClickCharSliders()
         {
@@ -64,6 +88,12 @@ namespace StarWarsTests.pageObjects
             return Container_vehicles.GetAttribute("style");
         }
 
+        public void ClickOnImages()
+        {
+            Actions actions = new Actions(driver);
+            actions.MoveToElement(Card_Click).Click().Perform();
+            Thread.Sleep(3000);    
+          
         public string[] ResizeWindow()
         {
             ClickCharSliders();
