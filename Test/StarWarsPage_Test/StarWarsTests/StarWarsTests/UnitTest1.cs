@@ -5,7 +5,8 @@ using StarWarsTests.utilities;
 namespace StarWarsTests
 {
     public class Tests : Base
-    {   
+    {        
+
         //Dominik
         [Test, Order(1)]
         public void TestPageTitle()
@@ -62,7 +63,7 @@ namespace StarWarsTests
                 Assert.Multiple(() =>
                 {
                     Assert.That(MAINPAGE.ClickCharSliders(), Is.EqualTo("top: -350px;"));
-                    Assert.That(MAINPAGE.ClickVehicleSliders(), Is.EqualTo("top: -350px;"));
+                    Assert.That(MAINPAGE.ClickVehicleSliders(), Is.EqualTo("top: -1400px;"));
                 });
             }
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
@@ -116,7 +117,7 @@ namespace StarWarsTests
             }
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
         }
-        
+
         //Dominik
         [Test, Order(8)]
 
@@ -127,22 +128,22 @@ namespace StarWarsTests
             try
             {
                 Assert.That(MAINPAGE.Card_Show.GetAttribute("style"), Is.EqualTo("display: block;"));
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 TestContext.WriteLine("Nem jelenik meg az inform�ci�s fel�let!");
             }
         }
-        
+
         // Mátyás
         [Test, Order(9)]
         public void TestCountofLinearGradientClasses()
         {
             try
-            {
-                Thread.Sleep(2000);
+            {           
                 Assert.That(MAINPAGE.GetAllLinearGradientClasses(), Is.EqualTo(7));
             }
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
-        }                                       
+        }            
     }
 }

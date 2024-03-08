@@ -71,7 +71,7 @@ namespace StarWarsTests.pageObjects
             actions.MoveToElement(Button_charNext).Click().Perform();
             Thread.Sleep(100);
             actions.MoveToElement(Button_charPrev).Click().Perform();
-            Thread.Sleep(100);
+            Thread.Sleep(1000);
             return Container_characters.GetAttribute("style");
         }
 
@@ -84,7 +84,7 @@ namespace StarWarsTests.pageObjects
                 Thread.Sleep(100);
             }            
             actions.MoveToElement(Button_vehiclePrev).Click().Perform();
-            Thread.Sleep(100);
+            Thread.Sleep(1000);
             return Container_vehicles.GetAttribute("style");
         }
 
@@ -92,7 +92,8 @@ namespace StarWarsTests.pageObjects
         {
             Actions actions = new Actions(driver);
             actions.MoveToElement(Card_Click).Click().Perform();
-            Thread.Sleep(3000);    
+            Thread.Sleep(3000);
+        }
           
         public string[] ResizeWindow()
         {
@@ -114,5 +115,5 @@ namespace StarWarsTests.pageObjects
             }
             return count;
         }
-    }
+    }        
 }

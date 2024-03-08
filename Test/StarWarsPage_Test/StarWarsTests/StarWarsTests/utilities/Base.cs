@@ -28,7 +28,9 @@ namespace StarWarsTests.utilities
 
             driver.Url = actUrl;
 
-            MAINPAGE = new mainPage(driver);
+            Thread.Sleep(4000);
+
+            MAINPAGE = new mainPage(driver);            
         }
 
         [TearDown]
@@ -36,6 +38,7 @@ namespace StarWarsTests.utilities
         {
             driver.Quit();
             driver.Dispose();
+            Thread.Sleep(4000);
 
         }
     }
