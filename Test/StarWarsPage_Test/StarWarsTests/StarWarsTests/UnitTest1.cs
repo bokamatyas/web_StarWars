@@ -17,7 +17,7 @@ namespace StarWarsTests
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
         }
 
-        //Mátyás
+        //Mï¿½tyï¿½s
         [Test, Order(2)]
         public void TestPageCssLink()
         {
@@ -36,24 +36,9 @@ namespace StarWarsTests
             }
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
         }
-
-        //Mátyás
-        [Test, Order(3)]
-        public void TestPageSliders()
-        {           
-            try
-            {
-                Assert.Multiple(() =>
-                {
-                    Assert.That(MAINPAGE.ClickCharSliders(), Is.EqualTo("top: -350px;"));
-                    Assert.That(MAINPAGE.ClickVehicleSliders(), Is.EqualTo("top: -1400px;"));
-                });
-            }
-            catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
-        }
-
+        
         //Dominik
-        [Test, Order(4)]
+        [Test, Order(3)]
         public void TestScript() 
         {
             IWebElement? _script = null;
@@ -68,7 +53,22 @@ namespace StarWarsTests
 
         }
 
-        //Dominik
+        //Mï¿½tyï¿½s
+        [Test, Order(4)]
+        public void TestPageSliders()
+        {           
+            try
+            {
+                Assert.Multiple(() =>
+                {
+                    Assert.That(MAINPAGE.ClickCharSliders(), Is.EqualTo("top: -350px;"));
+                    Assert.That(MAINPAGE.ClickVehicleSliders(), Is.EqualTo("top: -350px;"));
+                });
+            }
+            catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
+        }
+        
+         //Dominik
         [Test, Order(5)]
 
         public void TestCharacterDivPosition()
@@ -81,10 +81,10 @@ namespace StarWarsTests
             }
             catch (Exception ex)
             {
-                TestContext.WriteLine("Nincsenek a div-ben a karakterek képei!");
+                TestContext.WriteLine("Nincsenek a div-ben a karakterek kï¿½pei!");
             }
         }
-
+        
         //Dominik
         [Test, Order(6)]
         public void TestVehicleDivPosition()
@@ -97,13 +97,28 @@ namespace StarWarsTests
             }
             catch (Exception ex)
             {
-                TestContext.WriteLine("Nincsenek a div-ben a jármûvek képei!");
+                TestContext.WriteLine("Nincsenek a div-ben a jï¿½rmï¿½vek kï¿½pei!");
             }
         }
-
-
+        
         //Dominik
         [Test, Order(7)]
+        public void TestContentChangeOnPageResize()
+        {
+            try
+            {
+                string[] results = MAINPAGE.ResizeWindow();
+                Assert.Multiple(() =>
+                {
+                    Assert.That(results[0], Is.EqualTo("top: 0px;"));
+                    Assert.That(results[1], Is.EqualTo("top: 0px;"));
+                });
+            }
+            catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
+        }
+        
+        //Dominik
+        [Test, Order(8)]
 
         public void TestShowCardDetails()
         {
@@ -114,10 +129,20 @@ namespace StarWarsTests
                 Assert.That(MAINPAGE.Card_Show.GetAttribute("style"), Is.EqualTo("display: block;"));
             } catch (Exception ex)
             {
-                TestContext.WriteLine("Nem jelenik meg az információs felület!");
+                TestContext.WriteLine("Nem jelenik meg az informï¿½ciï¿½s felï¿½let!");
             }
         }
-
-
+        
+        // MÃ¡tyÃ¡s
+        [Test, Order(9)]
+        public void TestCountofLinearGradientClasses()
+        {
+            try
+            {
+                Thread.Sleep(2000);
+                Assert.That(MAINPAGE.GetAllLinearGradientClasses(), Is.EqualTo(7));
+            }
+            catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
+        }                                       
     }
 }
