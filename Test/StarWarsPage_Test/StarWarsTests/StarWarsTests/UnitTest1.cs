@@ -6,7 +6,7 @@ namespace StarWarsTests
 {
     public class Tests : Base
     {   
-
+        //Dominik
         [Test, Order(1)]
         public void TestPageTitle()
         {
@@ -17,6 +17,7 @@ namespace StarWarsTests
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
         }
 
+        //Mátyás
         [Test, Order(2)]
         public void TestPageCssLink()
         {
@@ -36,7 +37,8 @@ namespace StarWarsTests
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
         }
 
-        [Test, Order(4)]
+        //Mátyás
+        [Test, Order(3)]
         public void TestPageSliders()
         {           
             try
@@ -50,7 +52,8 @@ namespace StarWarsTests
             catch (Exception ex) { TestContext.WriteLine(ex.ToString()); }
         }
 
-        [Test, Order(3)]
+        //Dominik
+        [Test, Order(4)]
         public void TestScript() 
         {
             IWebElement? _script = null;
@@ -63,6 +66,56 @@ namespace StarWarsTests
             }
             Assert.That(_script.GetAttribute("src"), Is.EqualTo("https://bokamatyas.github.io/web_StarWars/js/script.js"));
 
+        }
+
+        //Dominik
+        [Test, Order(5)]
+
+        public void TestCharacterDivPosition()
+        {
+            MAINPAGE.ClickCharSliders();
+
+            try
+            {
+                Assert.That(MAINPAGE.Container_characters.GetAttribute("id"), Is.EqualTo("characters"));
+            }
+            catch (Exception ex)
+            {
+                TestContext.WriteLine("Nincsenek a div-ben a karakterek képei!");
+            }
+        }
+
+        //Dominik
+        [Test, Order(6)]
+        public void TestVehicleDivPosition()
+        {
+            MAINPAGE.ClickVehicleSliders();
+
+            try
+            {
+                Assert.That(MAINPAGE.Container_vehicles.GetAttribute("id"), Is.EqualTo("vehicles"));
+            }
+            catch (Exception ex)
+            {
+                TestContext.WriteLine("Nincsenek a div-ben a jármûvek képei!");
+            }
+        }
+
+
+        //Dominik
+        [Test, Order(7)]
+
+        public void TestShowCardDetails()
+        {
+            MAINPAGE.ClickOnImages();
+
+            try
+            {
+                Assert.That(MAINPAGE.Card_Show.GetAttribute("style"), Is.EqualTo("display: block;"));
+            } catch (Exception ex)
+            {
+                TestContext.WriteLine("Nem jelenik meg az információs felület!");
+            }
         }
 
 
